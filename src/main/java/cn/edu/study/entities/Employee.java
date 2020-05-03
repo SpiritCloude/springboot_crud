@@ -1,14 +1,21 @@
 package cn.edu.study.entities;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+import javax.validation.constraints.Email;
 import java.util.Date;
 
+@ApiModel
 public class Employee {
 
 	private Integer id;
     private String lastName;
 
+    @Email
     private String email;
-    //1 male, 0 female
+
+    @ApiModelProperty("1 male, 0 female")
     private Integer gender;
     private Department department;
     private Date birth;

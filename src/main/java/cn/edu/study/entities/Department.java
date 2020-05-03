@@ -1,5 +1,8 @@
 package cn.edu.study.entities;
 
+import io.swagger.annotations.ApiModel;
+
+@ApiModel
 public class Department {
 
 	private Integer id;
